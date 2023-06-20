@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+ }
+
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    padding: 1rem 4%;
+    justify-content: space-between;
+}
+
+header .navbar a{
+    color:#000;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: #e3978e;
+
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    margin-right: 30px;
+}
+
+/* Hero */
+.hero .heroWrapper .card{
+    width: 100%;
+    height: 570px;
+}
+
+.hero .heroWrapper .card1{
+    background-image: url('banner-1.jpg');
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: #fff;
+}
+
+.hero .heroWrapper .card h3{
+    font-size: 20px;
+}
+
+.hero .heroWrapper .card h1{
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.hero .heroWrapper .card button{
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+}
+
+.hero .heroWrapper .card button::before{
+    position: absolute;
+    width: 108%;
+    height: 43px;
+    border: 2px dotted #fff;
+    content: '';
+    top: -6px;
+    left: -6px;
+    border-radius: 30px;
+}
+
+
+.hero .heroWrapper .card2{
+    background-image: url('banner-2.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 4%;
+    color: #fff;
+}
+
+/* Service */
+.service{
+    padding: 4rem 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .card{
+    width: 260px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.service .card .images{
+    border: 2px dotted #e3978e;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.service .card i{
+    padding: 20px;
+    font-size: 25px;
+    color: #e3978e;
+}
+
+.service .card h3{
+    margin: 15px 0;
+}
+
+.service .card:hover .images{
+    background-color: #e3978e;
+    border: 2px dotted #fff;
+    transition: .5s;
+}
+
+.service .card:hover .images i{
+    color: #fff;
+}
+
+.service .card h3{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.service .card p{
+    font-weight: lighter;
+    font-size: 13px;
+    color: #444;
+}
+
+/* Category Section */
+.categorySection{
+    padding: 4rem 4%;
+}
+
+.categorySection .categoryTitle{
+    text-align: center;
+}
+
+.categorySection .categoryContent .categoryWrapper{
+    padding: 4rem 4%;
+}
+
+.categorySection .categoryContent .card{
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.categorySection .categoryContent .card .images{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px dotted #e3978e;
+}
+
+.categorySection .categoryContent .card:hover .images{
+    border: 4px solid #e3978e;
+}
+
+.categorySection .categoryContent .card .images img{
+    width: 100%;
+}
+
+.categorySection .categoryContent .card h3{
+    margin: 10px 0;
+}
+
+.categorySection .categoryContent .card p{
+    color: #444;
+    font-style: italic;
+}
+
+/* Trending */
+.trending .trendingTitle{
+    text-align: center;
+}
+
+.trending .trendingTitle h3{
+    font-size: 30px;
+}
+
+.trending .trendingbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.trending .trendingbtn ul{
+    display: flex;
+    list-style: none;
+}
+
+.trending .trendingbtn li{
+    margin-right: 30px;
+}
+
+.trending .trendingbtn button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #e3978e;
+    background-color: transparent;
+    margin-top:30px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.trending .trendingbtn button:hover{
+    background-color: #e3978e;
+    transition: .5s;
+    color: #fff;
+}
+
+.trendingContent{
+    padding: 2rem 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    row-gap: 40px;
+}
+
+.trendingContent .card{
+    width: 350px;
+    text-align: center;
+    border: 4px solid #f5f5f5;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.trendingContent .card .images{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.trendingContent .card .desc{
+    position: absolute;
+    top: 0;
+    left: -200px;
+}
+
+.trendingContent .card:hover .desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.trendingContent .card .buyBtn{
+    transform: translateY(60px);
+    transition: .5s;
+}
+
+.trendingContent .card:hover .buyBtn{
+    transform: translateY(0);
+    transition: .5s;
+}
+
+.trendingContent .card .buyBtn button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+.trendingContent .card .desc li{
+    padding: 20px;
+    border: 1px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.trendingContent img{
+    width: 100%;
+}
+
+.trendingContent .ratting i{
+    color: #e3978e;
+}
+
+.trendingContent h3{
+    margin: 20px 0;
+}
+
+.trendingContent .price{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.trendingContent li{
+    margin-right: 20px;
+}
+
+.trendingContent li:nth-child(1){
+    color: #e3978e;
+}
+
+.trendingContent li:nth-child(2){
+    text-decoration: line-through;
+    color: #444;
+}
+
+/* gallery */
+.gallery{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .card{
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.gallery .card .images,
+.gallery .card img{
+    width: 100%;
+}
+
+.gallery .card h1{
+    font-size: 40px;
+}
+
+.gallery .card p{
+    margin: 15px 0;
+}
+
+.gallery button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+/* Blog */
+.blog{
+    margin-top: 80px;
+    padding: 2rem 4%;
+}
+
+.blog .title{
+    text-align: center;
+}
+
+.blog .title h1{
+    font-size: 40px;
+}
+
+.blogContent{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.blogContent .card{
+    width: 350px;
+    text-align: center;
+    border: 3px solid #f5f5f5;
+    cursor: pointer;
+}
+
+.blogContent .card img{
+    width: 100%;
+}
+
+.blogContent .card .images{
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogContent .card:hover .images img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.blogContent .card .cardText{
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+.blogContent .card .cardText p{
+    margin: 15px 0;
+    color: #444;
+    font-size: 15px;
+}
+
+.blogContent .card .cardText button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    padding: 2rem 4%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    margin-top: 40px;
+}
+
+footer .footer1{
+    max-width: 300px;
+}
+
+footer h3{
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 12px;
+}
